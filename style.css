@@ -1,0 +1,82 @@
+header {
+    display: flex;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a :hover {
+    color: rgb(72, 255, 0);
+}
+
+header nav ul li {
+    list-style: none;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+
+ol {
+    display: flex;
+    padding: 0px;
+}
+
+ol li {
+    list-style: none;
+}
+
+ol li a {
+    text-decoration: none;
+    color: black;
+
+}
+ol li a :hover{
+    color: brown;
+}
+
+ol li+li {
+    margin-left: 30px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pictures img {
+    width: 250px;
+    height: 200;
+}
+
+.pictures {
+    border: 1px solid black;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+@media screen and (orientation: portrait) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        padding: 0;
+        font-size: .8rem;
+    }
+    ol {
+        padding: 0;
+        font-size: .8rem;
+    }
+}
